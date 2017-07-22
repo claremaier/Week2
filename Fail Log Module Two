@@ -7,7 +7,7 @@ What I was trying to Do
   I was supposed to use the APIs in JSON format through the Canadiana Discovery Portal. I followed the steps easily and completed the 
   exercise better than I had expected.
  Exercise Five
-  
+  This exercise was supposed to install a program called Twarc and then allow for the mining of Twitter data. 
   
 What I did
 Exercise One
@@ -34,15 +34,27 @@ Exercise Four
  is a fault of my own because of how I am used to learning and the condensed schedule. 
  I'm just not sure what is really going on sometimes. 
 Exercise Five
- 
- 
- 
+ I did not have trouble creating the Twarc and running the search. I stopped the search on Canada150 twice
+ half-way through because it was taking a really long time. 
+ I had trouble converting it to a csv file. After trying to vary the code slightly by myself, I noticed that 
+ https://hist3814o.slack.com/archives/C5PEMDU3V/p1500733113372538 sarahmcole had the same problem with the 
+ file being read as one line rather than several smaller ones. I had assistance modifying and using her
+ python code https://github.com/sarahmcole/hist3814o_module2/blob/master/replace_json.py (thanks sarahmcole!)
+ and was able to generate the csv code. 
 
 Things that were hard
 Exercise One
-The actual exercise was not hard, it showed how useful and what the limitations are on exploring data that way. 
-However, the command line stuff still confused me and I had a great deal of difficulty navigating it. See my file https://github.com/claremaier/Week2/blob/master/Module2%20Exercise1%20Command%20line
-to demonstrate my problems.
+ The actual exercise was not hard, it showed how useful and what the limitations are on exploring data that way. 
+ However, the command line stuff still confused me and I had a great deal of difficulty navigating it. See my file https://github.com/claremaier/Week2/blob/master/Module2%20Exercise1%20Command%20line
+ to demonstrate my problems.
+Exercise Five
+ I did not understand the nature of the error message (it read it as one file, rather than many) and 
+ am not familiar enough to sort it out independently. I had to rely on others (a hard lesson for a traditionally
+ trained scholar and a type-A personality) and spend a lot of time doing what felt like confusing and 
+ delicate work on the command line. I think the most confusing part is still working out the relationships between all the 
+ commands and the sequences of events/ when to add, commit, push. This language is different than 
+ the "save, copy, paste" I am used to. It is also hard to understand what is happening "behind the
+ scenes" cause I can't see the immediate results of commands.
 
 Thoughts on where to go next
 I should revisit the command line later this week and work through some basic exercises in order to get a better grasp on the new language.
