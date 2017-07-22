@@ -1,0 +1,27 @@
+What I was trying to Do
+ Exercise One
+  I was trying to follow the instructions so that I could look through the "nice" databases and explore. 
+ Exercise Two
+  
+What I did
+Exercise One
+  It took me a few minutes to figure out how to download and open the csv files. I opened them in LibreOffice Calc
+  spreadsheet program and selected the category titled "modern country" and ran a chart output on it. I tried several ways
+  and was not able to create useful charts. I switched to Google's spreadsheet program and found this worked much simpler.
+  I completed the exercise as it was described. 
+  However, when I tried to commit my nano file "Week2Exercise1" to the correct repo and save it, I saved it and then pushed
+  it to github in the wrong repo. Mayham followed as I tried to use my very limited knowledge to take the file out again.
+  I then accidently removed it completely (after saving it to github) and was at a loss to retrieve it. 
+  Classmate sarahmcole tried to assist me by showing me some of her similar mistakes and her solutions. This was helpful 
+  but did not recover my files. I turned to my brother who easily showed me how to copy the github copy back onto DH Box
+  and extract it from its repo. I then placed it in the correct repo "Week2" and followed the steps from last week to add,
+  commit and save it properly. He then reminded me to put it back on github, which I have done.
+
+Things that were hard
+Exercise One
+The actual exercise was not hard, it showed how useful and what the limitations are on exploring data that way. 
+However, the command line stuff still confused me and I had a great deal of difficulty navigating it. See my file https://github.com/claremaier/Week2/blob/master/Module2%20Exercise1%20Command%20line
+to demonstrate my problems.
+
+Thoughts on where to go next
+I should revisit the command line later this week and work through some basic exercises in order to get a better grasp on the new language.
