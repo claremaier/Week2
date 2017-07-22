@@ -1,0 +1,365 @@
+#Fail Log and Command Line Week 2 Exercise 1
+
+---
+author: clare maier
+
+---
+
+**Command Line Exercise 1**
+* Documentation:  https://help.ubuntu.com/
+claremaier@4b37782fd3b8:~$ nano Week2Exercise1
+claremaier@4b37782fd3b8:~$ git add
+fatal: Not a git repository (or any of the parent directories): .git
+claremaier@4b37782fd3b8:~$ get add
+-bash: get: command not found
+claremaier@4b37782fd3b8:~$ git add -A
+fatal: Not a git repository (or any of the parent directories): .git
+claremaier@4b37782fd3b8:~$ git status
+fatal: Not a git repository (or any of the parent directories): .git
+claremaier@4b37782fd3b8:~$ git commit Week2Exercise1
+fatal: Not a git repository (or any of the parent directories): .git
+claremaier@4b37782fd3b8:~$ ls
+dhbox-work-today.md          Spoon-Knife          Week2Exercise1
+first-repo                   todayscommands.docx
+pandoc-1.19.2.1-1-amd64.deb  todayscommands.html
+claremaier@4b37782fd3b8:~$ git status
+fatal: Not a git repository (or any of the parent directories): .git
+claremaier@4b37782fd3b8:~$ cd
+claremaier@4b37782fd3b8:~$ ls
+dhbox-work-today.md          Spoon-Knife          Week2Exercise1
+first-repo                   todayscommands.docx
+pandoc-1.19.2.1-1-amd64.deb  todayscommands.html
+claremaier@4b37782fd3b8:~$ pandoc -o Week2Exercise1.docx Week2Exercise1.md
+pandoc: Week2Exercise1.md: openFile: does not exist (No such file or directory)
+claremaier@4b37782fd3b8:~$ ls
+dhbox-work-today.md          Spoon-Knife          Week2Exercise1
+first-repo                   todayscommands.docx
+pandoc-1.19.2.1-1-amd64.deb  todayscommands.html
+claremaier@4b37782fd3b8:~$ pwd
+/home/claremaier
+claremaier@4b37782fd3b8:~$ ls
+dhbox-work-today.md          Spoon-Knife          Week2Exercise1
+first-repo                   todayscommands.docx
+pandoc-1.19.2.1-1-amd64.deb  todayscommands.html
+claremaier@4b37782fd3b8:~$ mv Week2Exercise1 first-repo
+claremaier@4b37782fd3b8:~$ ls
+dhbox-work-today.md  pandoc-1.19.2.1-1-amd64.deb  todayscommands.docx
+first-repo           Spoon-Knife                  todayscommands.html
+claremaier@4b37782fd3b8:~$ cd first-repo
+claremaier@4b37782fd3b8:~/first-repo$ ls
+file1  file2  file3  newfile  readme.md  secondnewfile  Week2Exercise1
+claremaier@4b37782fd3b8:~/first-repo$ get add
+-bash: get: command not found
+claremaier@4b37782fd3b8:~/first-repo$ git add Week2Excersize
+fatal: pathspec 'Week2Excersize' did not match any files
+claremaier@4b37782fd3b8:~/first-repo$ git add Week2Exercise1 
+claremaier@4b37782fd3b8:~/first-repo$ git commit -m Week2Exercise1 
+[master e7aca9c] Week2Exercise1
+ 1 file changed, 19 insertions(+)
+ create mode 100644 Week2Exercise1
+claremaier@4b37782fd3b8:~/first-repo$ git push origin master
+Username for 'https://github.com': claremaier
+Password for 'https://claremaier@github.com': 
+Counting objects: 4, done.
+Delta compression using up to 20 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.75 KiB | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/claremaier/Exercise-4.git
+   3f84487..e7aca9c  master -> master
+claremaier@4b37782fd3b8:~/first-repo$ git rm Week2Exercise1 
+rm 'Week2Exercise1'
+claremaier@4b37782fd3b8:~/first-repo$ cd
+claremaier@4b37782fd3b8:~$ cd . . 
+claremaier@4b37782fd3b8:~$ mkdir Week2
+claremaier@4b37782fd3b8:~$ ls
+dhbox-work-today.md          Spoon-Knife          Week2
+first-repo                   todayscommands.docx
+pandoc-1.19.2.1-1-amd64.deb  todayscommands.html
+claremaier@4b37782fd3b8:~$ git add Week2Exercise1
+fatal: Not a git repository (or any of the parent directories): .git
+claremaier@4b37782fd3b8:~$ pwd
+/home/claremaier
+claremaier@4b37782fd3b8:~$ cd Week2
+claremaier@4b37782fd3b8:~/Week2$ git add Week2Exercise1
+fatal: Not a git repository (or any of the parent directories): .git
+claremaier@4b37782fd3b8:~/Week2$ git init
+Initialized empty Git repository in /home/claremaier/Week2/.git/
+claremaier@4b37782fd3b8:~/Week2$ git add Week2Exercise1
+fatal: pathspec 'Week2Exercise1' did not match any files
+claremaier@4b37782fd3b8:~/Week2$ cp
+cp: missing file operand
+Try 'cp --help' for more information.
+claremaier@4b37782fd3b8:~/Week2$ mv ../ 
+.bash_logout                 pandoc-1.19.2.1-1-amd64.deb
+.bashrc                      .profile
+.cache/                      Spoon-Knife/
+dhbox-work-today.md          todayscommands.docx
+first-repo/                  todayscommands.html
+.gitconfig                   Week2/
+claremaier@4b37782fd3b8:~/Week2$ git add Week2Exercise1^C
+claremaier@4b37782fd3b8:~/Week2$ ^C
+claremaier@4b37782fd3b8:~/Week2$ ^C
+claremaier@4b37782fd3b8:~/Week2$ ^C
+claremaier@4b37782fd3b8:~/Week2$ ^C
+claremaier@4b37782fd3b8:~/Week2$ ^C
+claremaier@4b37782fd3b8:~/Week2$ pwd
+/home/claremaier/Week2
+claremaier@4b37782fd3b8:~/Week2$ cd . . 
+claremaier@4b37782fd3b8:~/Week2$ ls
+claremaier@4b37782fd3b8:~/Week2$ cd..
+-bash: cd..: command not found
+claremaier@4b37782fd3b8:~/Week2$ cd ..
+claremaier@4b37782fd3b8:~$ ls
+dhbox-work-today.md          Spoon-Knife          Week2
+first-repo                   todayscommands.docx
+pandoc-1.19.2.1-1-amd64.deb  todayscommands.html
+claremaier@4b37782fd3b8:~$ cd first-repo
+claremaier@4b37782fd3b8:~/first-repo$ ls
+file1  file2  file3  newfile  readme.md  secondnewfile
+claremaier@4b37782fd3b8:~/first-repo$ git checkout
+D       Week2Exercise1
+Your branch is up-to-date with 'origin/master'.
+claremaier@4b37782fd3b8:~/first-repo$ ls
+file1  file2  file3  newfile  readme.md  secondnewfile
+claremaier@4b37782fd3b8:~/first-repo$ git checkout Week2Exercise1
+error: pathspec 'Week2Exercise1' did not match any file(s) known to git.
+claremaier@4b37782fd3b8:~/first-repo$ ls
+file1  file2  file3  newfile  readme.md  secondnewfile
+claremaier@4b37782fd3b8:~/first-repo$ ls
+file1  file2  file3  newfile  readme.md  secondnewfile
+claremaier@4b37782fd3b8:~/first-repo$ git log
+commit e7aca9c0f6cf9507551edd106a6d0607407fb66e
+Author: Clare Maier <clare.m200@gmail.com>
+Date:   Sat Jul 22 02:37:07 2017 +0000
+
+    Week2Exercise1
+
+commit 3f84487779066f4374c7cbbd8d05293549b8a317
+Merge: 22d5c77 70f5475
+Author: Clare Maier <clare.m200@gmail.com>
+Date:   Sat Jul 15 17:36:11 2017 +0000
+
+    Merge branch 'experiment'
+    Finally!
+
+commit 70f547530993b111c1b1df74a449b784bbef551a
+Author: Clare Maier <clare.m200@gmail.com>
+Date:   Sat Jul 15 17:35:34 2017 +0000
+
+    Experiment correct this time
+
+commit 22d5c7731d8e1ec3b674aa06c970cea3b55a6f2b
+Author: Clare Maier <clare.m200@gmail.com>
+Date:   Sat Jul 15 17:28:04 2017 +0000
+
+    File 2 and 3
+
+commit 58580f65b3ee10b98439bb94a43b13b807ae4a00
+Author: Clare Maier <clare.m200@gmail.com>
+Date:   Sat Jul 15 17:25:10 2017 +0000
+claremaier@4b37782fd3b8:~/first-repo$ git checkout e7aca9c0f6cf9507551edd106a6d0607407fb66e
+D       Week2Exercise1
+Note: checking out 'e7aca9c0f6cf9507551edd106a6d0607407fb66e'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b new_branch_name
+
+HEAD is now at e7aca9c... Week2Exercise1
+claremaier@4b37782fd3b8:~/first-repo$ git reset HEAD~
+claremaier@4b37782fd3b8:~/first-repo$ ls
+file1  file2  file3  newfile  readme.md  secondnewfile
+claremaier@4b37782fd3b8:~/first-repo$ cd home
+-bash: cd: home: No such file or directory
+claremaier@4b37782fd3b8:~/first-repo$ pwd
+/home/claremaier/first-repo
+claremaier@4b37782fd3b8:~/first-repo$ cd home
+-bash: cd: home: No such file or directory
+claremaier@4b37782fd3b8:~/first-repo$ cd
+claremaier@4b37782fd3b8:~$ ls
+dhbox-work-today.md          Spoon-Knife          Week2
+first-repo                   todayscommands.docx
+pandoc-1.19.2.1-1-amd64.deb  todayscommands.html
+claremaier@4b37782fd3b8:~$ history
+    1  nano Week2Exercise1
+    2  git add
+    3  get add
+    4  git add -A
+    5  git status
+    6  git commit Week2Exercise1
+    7  ls
+    8  git status
+    9  cd
+   10  ls
+   11  pandoc -o Week2Exercise1.docx Week2Exercise1.md
+   12  ls
+   13  pwd
+   14  ls
+   15  mv Week2Exercise1 first-repo
+   16  ls
+   17  cd first-repo
+   18  ls
+   19  get add
+   20  git add Week2Excersize
+   21  git add Week2Exercise1 
+   22  git commit -m Week2Exercise1 
+   23  git push origin master
+   24  git rm Week2Exercise1 
+   25  cd
+   26  cd . . 
+   27  mkdir Week2
+   28  ls
+   29  git add Week2Exercise1
+   30  pwd
+   31  cd Week2
+   32  git add Week2Exercise1
+   33  git init
+   34  git add Week2Exercise1
+   35  cp
+   36  pwd
+   37  cd . . 
+   38  ls
+   39  cd..
+   40  cd ..
+   41  ls
+   42  cd first-repo
+   43  ls
+   44  git checkout
+   45  ls
+   46  git checkout Week2Exercise1
+   47  ls
+   48  git log
+   49  git checkout e7aca9c0f6cf9507551edd106a6d0607407fb66e
+   50  git reset HEAD~
+   51  ls
+   52  cd home
+   53  pwd
+   54  cd home
+   55  cd
+   56  ls
+   57  history
+
+**The section below was completed with assistance from my brother in order to recover my missing file**
+claremaier@4b37782fd3b8:~$ pd
+-bash: pd: command not found
+claremaier@4b37782fd3b8:~$ pwd
+/home/claremaier
+claremaier@4b37782fd3b8:~$ ls
+dhbox-work-today.md  first-repo  pandoc-1.19.2.1-1-amd64.deb  Spoon-Knife  todayscommands.docx  todayscommands.html  Week2
+claremaier@4b37782fd3b8:~$ cd first-repo/
+claremaier@4b37782fd3b8:~/first-repo$ ls
+file1  file2  file3  newfile  readme.md  secondnewfile
+claremaier@4b37782fd3b8:~/first-repo$ git status
+HEAD detached from e7aca9c
+nothing to commit, working directory clean
+claremaier@4b37782fd3b8:~/first-repo$ cd ..
+claremaier@4b37782fd3b8:~$ cd first-repo/
+claremaier@4b37782fd3b8:~/first-repo$ ls
+file1  file2  file3  newfile  readme.md  secondnewfile
+claremaier@4b37782fd3b8:~/first-repo$ git remotes
+git: 'remotes' is not a git command. See 'git --help'.
+
+Did you mean this?
+        remote
+claremaier@4b37782fd3b8:~/first-repo$ git remote list
+error: Unknown subcommand: list
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags|--no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete |<branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+claremaier@4b37782fd3b8:~/first-repo$ git list remotes
+git: 'list' is not a git command. See 'git --help'.
+
+Did you mean one of these?
+        bisect
+        rev-list
+claremaier@4b37782fd3b8:~/first-repo$ git remote -v
+origin  https://github.com/claremaier/Exercise-4.git (fetch)
+origin  https://github.com/claremaier/Exercise-4.git (push)
+claremaier@4b37782fd3b8:~/first-repo$ git status
+HEAD detached from e7aca9c
+nothing to commit, working directory clean
+claremaier@4b37782fd3b8:~/first-repo$ cd ..
+claremaier@4b37782fd3b8:~$ git checkout https://github.com/claremaier/Exercise-4
+fatal: Not a git repository (or any of the parent directories): .git
+claremaier@4b37782fd3b8:~$ git clone https://github.com/claremaier/Exercise-4
+Cloning into 'Exercise-4'...
+remote: Counting objects: 25, done.
+remote: Compressing objects: 100% (11/11), done.
+remote: Total 25 (delta 6), reused 25 (delta 6), pack-reused 0
+Unpacking objects: 100% (25/25), done.
+Checking connectivity... done.
+claremaier@4b37782fd3b8:~$ ls
+dhbox-work-today.md  Exercise-4  first-repo  pandoc-1.19.2.1-1-amd64.deb  Spoon-Knife  todayscommands.docx  todayscommands.html  Week2
+claremaier@4b37782fd3b8:~/Exercise-4$ ls
+file1  file2  file3  newfile  readme.md  secondnewfile  Week2Exercise1
+claremaier@4b37782fd3b8:~/Exercise-4$ cd ..
+claremaier@4b37782fd3b8:~$ rm -rf first-repo/
+claremaier@4b37782fd3b8:~$ ls
+dhbox-work-today.md  Exercise-4  pandoc-1.19.2.1-1-amd64.deb  Spoon-Knife  todayscommands.docx  todayscommands.html  Week2
+claremaier@4b37782fd3b8:~$ cd Exercise-4/
+claremaier@4b37782fd3b8:~/Exercise-4$ ls
+file1  file2  file3  newfile  readme.md  secondnewfile  Week2Exercise1
+claremaier@4b37782fd3b8:~/Exercise-4$ mv Week2Exercise1 ../Week2
+claremaier@4b37782fd3b8:~/Exercise-4$ ls
+file1  file2  file3  newfile  readme.md  secondnewfile
+claremaier@4b37782fd3b8:~/Exercise-4$ cd ..
+claremaier@4b37782fd3b8:~$ cd Week2
+claremaier@4b37782fd3b8:~/Week2$ ls
+Week2Exercise1
+claremaier@4b37782fd3b8:~/Week2$ git add Week2Exercise1 
+claremaier@4b37782fd3b8:~/Week2$ ls
+Week2Exercise1
+claremaier@4b37782fd3b8:~/Week2$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags|--no-tags] [--mirror=<fetch|push>] <name> <url>
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Week2Exercise1
+claremaier@4b37782fd3b8:~/Week2$ git commit Week2Exercise1 
+Aborting commit due to empty commit message.
+claremaier@4b37782fd3b8:~/Week2$ git commit -m "added week2exercise1"
+[master (root-commit) d3a836d] added week2exercise1
+ 1 file changed, 19 insertions(+)
+ create mode 100644 Week2Exercise1
+claremaier@4b37782fd3b8:~/Week2$ git status
+On branch master
+nothing to commit, working directory clean
+claremaier@4b37782fd3b8:~/Week2$ git push origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+Please make sure you have the correct access rights
+and the repository exists.
+claremaier@4b37782fd3b8:~/Week2$ git remote add origin https://github.com/claremaier/Week2.git
+claremaier@4b37782fd3b8:~/Week2$ git push origin master
+Username for 'https://github.com': claremaier
+Password for 'https://claremaier@github.com': 
+Counting objects: 3, done.
+Delta compression using up to 20 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 1.70 KiB | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/claremaier/Week2.git
+ * [new branch]      master -> master
+
